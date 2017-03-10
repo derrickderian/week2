@@ -12,22 +12,18 @@
 */
 
 Route::get('/', function () {
-	// $tanggal = "hari ini";
-	$tanggal = date("d-m-Y H:i:s", time());
-	$gini = "ya gitu";
-    return view('welcome')
-    ->with('tanggal',$tanggal)
-    ->with('gini', $gini);
+    return view('welcome');
+   
 });
 
-Route::get('halo', function () {
-    return view('halo');
+Route::get('about', function () {
+    return view('about');
 });
 
-Route::get('halo/bebas', function () {
-    return view('terserah.bebas');
+Route::get('gallery', function () {
+    return view('gallery');
 });
 
-Route::get('bebas', function () {
-    return view('terserah.bebas');
+Route::get('web', function () {
+    return view('welcome');
 });
